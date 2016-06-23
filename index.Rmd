@@ -18,7 +18,7 @@ classoption: "hyperref,"
     + 2.2 [函数remap---绘制迁徙地图](#remap)
     + 2.3 [函数remapC---创建分级统计图](#remapC)
     + 2.4 [函数remapB](#remapB)
-3. [其他例子](#example)
+3. [其他例子](#examples)
 
 REmap是一个基于Echarts <http://echarts.baidu.com> 的一个R包。主要的目的是为广大数据玩家提供一个简便的,可交互的地图数据可视化工具。目前托管在github, 地址为<https://github.com/lchiffon/REmap>。
 
@@ -523,7 +523,7 @@ remapB(get_city_coord("上海"),
 ```
 ![](fig/markpoint4.png)
 
-## 3. 其他例子 {#example}
+## 3. 其他例子 {#examples}
 
 ### 3.1 图片做点和图片做为展示内容
 
@@ -542,7 +542,8 @@ remapC(data = chinaIphone,
          markPointTheme = markPointControl(effect = F, symbolSize = 30),
          title = "2015中国R语言会议")
 ```
-细心的人可能会发现，上面的代码运行之后并不会出现cos.png作为点的我们想要的那种图形那是因为结果上面使用的是相对路径，而程序运行后产生的临时html的路径与我们的当前路径是不同的。你所要做的就是保存完整的临时html到当前路径下，在重新打开就OK了。
+![](fig/examples1.png)
+细心的人可能会发现，上面的代码运行之后并不会出现cos.png作为点的那种图形，那是因为上面图片使用的是相对路径，而程序运行后产生的临时html的路径与我们的当前路径是不同的。你所要做的就是保存完整的临时html到当前路径下，再重新打开就OK了。
 
 
 **声明:** 本笔记内容并非原创，主要来自于：
